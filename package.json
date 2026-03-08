@@ -1,0 +1,57 @@
+{
+  "name": "desktop-app-starter",
+  "productName": "Desktop App Starter",
+  "version": "1.0.0",
+  "description": "Electron React App",
+  "main": ".vite/build/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx,.mts .",
+    "test": "npm run package && node scripts/smoke-test.mjs",
+    "postinstall": "electron-rebuild",
+    "deploy:windows": "powershell -ExecutionPolicy Bypass -File ./scripts/deploy-production.ps1",
+    "deploy:macos": "bash ./scripts/deploy-production.sh"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "sqlite",
+    "template"
+  ],
+  "author": "DesktopAppStarter",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-dmg": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron-forge/plugin-vite": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "@electron/rebuild": "^4.0.3",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react": "^19.2.1",
+    "@types/react-dom": "^19.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "electron": "40.8.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-import": "^2.32.0",
+    "playwright": "^1.55.1",
+    "typescript": "~4.5.4",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "strict": false,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES2022"],
+    "types": ["vite/client", "node"]
+  },
+  "include": ["src", "forge.config.ts", "vite.*.mts", "scripts"]
+}
