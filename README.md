@@ -52,6 +52,20 @@ A dialog will appear — click **Install** and wait for it to finish.
 
 Once both steps are done you are ready to go. Continue with **Quick start** below.
 
+## Run in GitHub Codespaces (no install needed)
+
+You can run this app entirely in your browser — no Node.js, no build tools, nothing to install.
+
+1. On the GitHub repo page, click the green **`<> Code`** button
+2. Switch to the **Codespaces** tab
+3. Click **Create codespace on main**
+4. Wait for the setup to finish (a few minutes the first time)
+5. A **"Desktop"** tab will open automatically in your browser — that's the app running
+
+> If the Desktop tab doesn't open on its own, go to the **Ports** panel at the bottom of the editor and click the globe icon next to port **6080**.
+
+That's it — the app builds, installs, and launches automatically inside the Codespace.
+
 ## Stack
 
 - Electron Forge
